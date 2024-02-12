@@ -35,6 +35,8 @@ rustup update stable
 
 ### VS Codeのインストール
 インストールの手順自体は省略する。Rustの拡張機能を入れておく。
+> [!TIP]
+> Rustの拡張機能を入れると、`rust-analyzer` という拡張機能も一緒にインストールされるが、`rust-analyzer failed to discover workspace` というエラーが出てしまう。
 
 ### サンプルコードを作ってみる
 `hello.rs` を作成して、これを実行してみる。
