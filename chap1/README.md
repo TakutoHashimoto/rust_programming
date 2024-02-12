@@ -49,8 +49,23 @@ rustup update stable
 % ./hello
 ```
 
+> [!TIP]
+> `println!` の `!` はRustのマクロを使っていることを示している。
+
 
 ## 4. 初めてのRust
+### 画面に文字を表示する
+* PythonとRustの標準出力の違いを比較してみる。
+    ```python
+    print("Hello, World!")
+    ```
+    ```rust
+    fn main() {
+        println!("Hello, World!");
+    }
+    ```
+
+* Rustは必ず `main` 関数を記述する必要がある。この `main` 関数をエントリーポイントといい、プログラムを実行すると最初にこの関数が実行される。
 
 
 ## 5. RustとPythonでFizzBuzz問題を解く
