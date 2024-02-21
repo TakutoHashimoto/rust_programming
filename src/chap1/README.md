@@ -37,6 +37,9 @@ rustup update stable
 インストールの手順自体は省略する。Rustの拡張機能を入れておく。
 > [!TIP]
 > Rustの拡張機能を入れると、`rust-analyzer` という拡張機能も一緒にインストールされるが、`rust-analyzer failed to discover workspace` というエラーが出てしまう。
+> 通常、Rustのプロジェクトには `Cargo.toml` がルートディレクトリに配置されているはずだが、今回はなかった。
+> 作成したフォルダをRustのプロジェクトとして扱うために、`Cargo init` を実行した（新規にプロジェクトを作成する場合は `Cargo new <name>` で、既存のディレクトリをRustのプロジェクトとしたい場合は `Cargo init` を実行する）。
+[参考](https://zenn.dev/razokulover/scraps/17844b5b5c7147)
 
 ### サンプルコードを作ってみる
 `hello.rs` を作成して、これを実行してみる。
@@ -48,9 +51,6 @@ rustup update stable
 # 実行
 % ./hello
 ```
-
-> [!TIP]
-> `println!` の `!` はRustのマクロを使っていることを示している。
 
 
 ## 4. 初めてのRust
@@ -66,6 +66,9 @@ rustup update stable
     ```
 
 * Rustは必ず `main` 関数を記述する必要がある。この `main` 関数をエントリーポイントといい、プログラムを実行すると最初にこの関数が実行される。
+
+> [!TIP]
+> `println!` の `!` はRustのマクロを使っていることを示している。
 
 
 ## 5. RustとPythonでFizzBuzz問題を解く
