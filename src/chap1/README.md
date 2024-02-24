@@ -65,10 +65,24 @@ rustup update stable
     }
     ```
 
+> [!NOTE]
+> [書式] 画面出力
+> ```rust
+> println!("出力内容");
+> ```
+> https://doc.rust-lang.org/std/macro.println.html
+
 * Rustは必ず `main` 関数を記述する必要がある。この `main` 関数をエントリーポイントといい、プログラムを実行すると最初にこの関数が実行される。
 
 > [!TIP]
 > `println!` の `!` はRustのマクロを使っていることを示している。
+
+### 数値に文字列を埋め込んで表示しよう
+> [!NOTE]
+> [書式] 値を書式に埋め込んで表示
+> ```rust
+> println!("...文字列...{}...", 値);
+> ```
 
 
 ## 5. RustとPythonでFizzBuzz問題を解く
